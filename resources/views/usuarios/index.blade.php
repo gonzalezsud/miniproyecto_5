@@ -28,6 +28,9 @@
                                         Email
                                     </th>
                                     <th scope="col" class="px-6 py-3">
+                                        Rol
+                                    </th>
+                                    <th scope="col" class="px-6 py-3">
                                         Action
                                     </th>
                                 </tr>
@@ -45,6 +48,11 @@
                                     </td>
                                     <td class="px-6 py-4">
                                         {{ $usuario->email }}
+                                    </td>
+                                    <td class="px-6 py-4">
+                                        {{-- @if ($usuario->hasRole("admin"))
+                                        <span>admin</span>
+                                        @endif --}}
                                     </td>
 
                                     <td class="px-6 py-4">
